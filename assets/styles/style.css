@@ -9,9 +9,12 @@ html {
 }
 
 body {
+  margin: 0;
   position: relative;
   height: inherit;
   min-width: 800px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  z-index: 0;
 }
 
 video {
@@ -20,4 +23,18 @@ video {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  z-index: -1;
+}
+
+.title {
+  margin: 0;
+  padding-top: 60px;
+  font-size: 116px;
+  line-height: 1.174;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title::after {
+  content: '*';
 }
